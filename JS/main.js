@@ -1,13 +1,24 @@
 const ulEl = document.getElementById('mylist');
-const shoppingitems = ["lemon", "gin", "vodka", "tonica", "ghiccio", "bicchieri"];
+const shoppingItems = ["lemon", "gin", "vodka", "tonica", "ghiccio", "bicchieri"];
 const liEl = document.createElement("li");
-let currentitemcount = 0;
+let i = 0;
+console.log(i);
 
-while ( currentitemcount < shoppingitems.lenght ) {
-    liEl.innerHTML = `${shoppingitems[currentitemcount]}`;
-    console.log("ciao");
-    currentitemcount++;
-    ulEl.append(liEl);
-};
+
+ulEl.append(liEl);
+
+
+while (i < shoppingItems.length) {
+    liEl.innerHTML += `${shoppingItems[i]}  `;
+    console.log(shoppingItems[i]);
+    i++;
+}; 
+
+
+
+
+
+
+
 
 
